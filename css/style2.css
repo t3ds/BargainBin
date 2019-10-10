@@ -271,6 +271,11 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
   overflow: hidden;
 }
 
+#total{
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 
 /*****EXTRA LARGE DEVICES*****/
 
