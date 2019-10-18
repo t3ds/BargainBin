@@ -13,6 +13,7 @@ html,body {
 
 body{
     font-size: 16px;
+    font-family: 'Roboto Mono', monospace;
     background-color: #ffffff;
 }
 
@@ -52,7 +53,7 @@ nav ul li{
 }
 
 
-nav ul li a{
+nav ul li a,nav ul li div{
     display: block;
     font-size: 14px;
     color: #767676;
@@ -284,6 +285,12 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
   margin-bottom: 30px;
 }
 
+
+
+/*******CONTACT FORM******/
+.contact-us{
+  margin: 200px auto;
+}
 
 /*****EXTRA LARGE DEVICES*****/
 

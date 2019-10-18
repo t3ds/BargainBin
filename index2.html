@@ -7,6 +7,7 @@
     <title>Charm</title>
 
     <!--<link rel="stylesheet" href="css/bootstap.min.css">-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
@@ -78,6 +79,7 @@
                  }, bannerTimer)
 
                  function bannerLoop() {
+                     console.log("OwO");
                      if(bannerStatus === 1) {
                         document.getElementById("imgban-2").style.opacity = "0";
                         setTimeout(function() {
@@ -94,7 +96,7 @@
                             document.getElementById("imgban-2").style.opacity = "1";
                         }, 1000);
                          
-                         var bannerStatus = 2;
+                         bannerStatus = 2;
                      }
 
 
@@ -114,7 +116,7 @@
                             document.getElementById("imgban-3").style.opacity = "1";
                         },1000);
                          
-                         var bannerStatus = 3;
+                         bannerStatus = 3;
                      }
 
 
@@ -134,7 +136,7 @@
                             document.getElementById("imgban-1").style.opacity = "1";
                         },1000);
                          
-                         var bannerStatus = 1;
+                         bannerStatus = 1;
                      }
 
                      
