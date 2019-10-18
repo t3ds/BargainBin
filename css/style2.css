@@ -17,15 +17,20 @@ body{
 }
 
 header{
-    position: sticky;
-    margin: 10px;
+    position: fixed;
+    width: 100%;
+   /* margin-left: 10%;
+    margin-right: 10%;*/
+    padding-top: 30px;
+    background-color: white;
     color: #767676;
 }
 
 nav{
     width: 1200px;
     height: 50px;
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #ffffff;
 }
 
@@ -56,6 +61,7 @@ nav ul li a{
 }
 
 nav ul li ul{
+  z-index: 10;
     display: none;
     position: absolute;
     /*padding: 10px;*/
@@ -100,6 +106,7 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
 }
 
 #footer{
+  background-image: url(../images/footer.jpg);
   background-color: #7FE3EA;
   position: absolute;
   height: 100px;
@@ -116,7 +123,8 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
 /*BANNER*/
 
 .main-banner{
-    margin: 10px auto;
+    z-index: -1;
+    margin: 100px auto;
     width: 1200px;
     height: 400px;
     /*background-color: #ffffff;*/
@@ -129,29 +137,29 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
     height: 100%;
     position: absolute;
     top: 0px;
-    transition: all ease-in-out 500ms;
-    -webkit-transition: all ease-in-out 500ms;
-    -moz-transition: all ease-in-out 500ms;
-    -o-transition: all ease-in-out 500ms;
+    transition: all ease-in-out 1000ms;
+    -webkit-transition: all ease-in-out 1000ms;
+    -moz-transition: all ease-in-out 1000ms;
+    -o-transition: all ease-in-out 1000ms;
     
 }
 
-.main-banner #imgban3 {
-    background-image: url("/Website/images/banner3.jpg");
+.main-banner #imgban-3 {
+    background-image: url(../images/banner3.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.main-banner #imgban2 {
-    background-image: url("/Website/images/banner2.jpg");
+.main-banner #imgban-2 {
+    background-image: url(../images/banner2.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.main-banner #imgban2{
-    background-image: url("/Website/images/banner1.jpg");
+.main-banner #imgban-1 {
+    background-image: url(../images/banner1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
