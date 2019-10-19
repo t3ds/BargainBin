@@ -62,7 +62,7 @@ nav ul li a,nav ul li div{
 }
 
 nav ul li ul{
-  z-index: 10;
+  /*z-index: 10;*/
     display: none;
     position: absolute;
     /*padding: 10px;*/
@@ -289,7 +289,25 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
 
 /*******CONTACT FORM******/
 .contact-us{
-  margin: 200px auto;
+  height: 100vh;
+  
+  background-image: url(../images/contact_bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
+  margin-top: 87px;
+  padding: 5px 0;
+  /*margin: 200px auto;*/
+}
+
+.contact-us i {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.contact-us iframe {
+  margin-top: 20px;
 }
 
 /*****EXTRA LARGE DEVICES*****/
