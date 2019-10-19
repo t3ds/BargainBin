@@ -285,7 +285,83 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
   margin-bottom: 30px;
 }
 
+a.buy{
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid black;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  
+  font-weight:300;
+  color:black;
+  text-align:center;
+  transition: all 0.2s;
+  }
 
+  a.buy:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  }
+ /* @media all and (max-width:30em){
+   a.buy{
+  display:block;
+  margin:1em auto;
+   }
+  }*/
+
+  .options{
+    text-align: center;
+  }
+
+  .options>div {
+    margin-bottom: 30px;
+  }
+
+  .form-radio
+{
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     display: inline-block;
+     position: relative;
+     background-color: #f1f1f1;
+     color: #666;
+     top: 10px;
+     height: 30px;
+     width: 30px;
+     border: 0;
+     border-radius: 50px;
+     cursor: pointer;     
+     margin-right: 7px;
+     outline: none;
+}
+.form-radio:checked::before
+{
+     position: absolute;
+     font: 13px/1 'Open Sans', sans-serif;
+     left: 11px;
+     top: 7px;
+     content: '\02143';
+     transform: rotate(40deg);
+}
+.form-radio:hover
+{
+     background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+     background-color: #f1f1f1;
+}
+label
+{
+     font: 15px/1.7 'Open Sans', sans-serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     cursor: pointer;
+}
 
 /*******CONTACT FORM******/
 .contact-us{
