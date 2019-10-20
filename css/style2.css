@@ -29,6 +29,7 @@ header{
 }
 
 nav{
+  position: relative;
     width: 1200px;
     height: 50px;
     margin-left: auto;
@@ -89,13 +90,76 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
     background-color: #f3f3f3; 
 }
 
-.search-box{
+
+/*.search {
+  width: 20%;
   position: absolute;
-  /*transform: translate(-50%,-50%);*/
-  background-color: #a1c3c4;
-  height: 40px;
-  padding: 10px;
+  top: 30%;
+  left: 35%;
 }
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 24px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+}*/
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 36px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 
 #container{
   min-height: 100%;
@@ -449,6 +513,54 @@ label
   font-size: 3em;
   color: #ffffff;
 
+}
+
+
+/*****PROFILE*****/
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10%;
+  padding: 10px;
+  text-align: center;
+}
+
+.title {
+  color: grey;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+#phone-no {
+  margin-bottom: 1em;
+}
+
+.card address {
+  margin-bottom: 1em;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+.card a:hover {
+  opacity: 0.7;
 }
 
 /*****EXTRA LARGE DEVICES*****/
