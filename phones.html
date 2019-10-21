@@ -37,133 +37,38 @@
                         </li>
 
                         <li><a href="contact.html">Contact</a></li>
-                        
+
                         <!--Login/Signup ka html should show up when he is not logged in, if he is logged in then the current non commented html should show up-->
                         <!--<li id="login"><a href="#">Login/Signup</a>-->
                             <li id="login"><a href="#">Hello, Shivam</a>
-                            <ul>
-                                <li><a href="profile.html">Profile</a></li>
-                                <li><a href="#">Sign Out</a></li>
-                            </ul>
-                        </li>
+                                <ul>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </li>
+                            
                     </ul>
-
-                    <div class="wrap">
-                        <div class="search">
-                            <input type="text" class="searchTerm" placeholder="What are you looking for?">
-                            <button type="submit" class="searchButton">
-                               <!-- <p>&#x1F50D;</p>-->
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </button>
-                        </div>
-                    </div>
-
-                            <!--<div class="search">
+                        <div class="wrap">
+                            <div class="search">
                                 <input type="text" class="searchTerm" placeholder="What are you looking for?">
                                 <button type="submit" class="searchButton">
-                                    <i class="fa fa-search"></i>
+                                   <!-- <p>&#x1F50D;</p>-->
+                                    <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
-                            </div>-->
+                            </div>
+                        </div>
 
                     
                     
                 </nav>
             </header> <!--HEADER END-->
 
-            <!--SLIDSHOW THING-A-MAJIG-->
-            <div class="main-banner" id="main-banner">
-                <div class="imgban" id="imgban-3">
-
-                </div>
-
-                <div class="imgban" id="imgban-2">
-                    
-                </div>
-
-                <div class="imgban" id="imgban-1">
-                    
-                </div>
+            <div class="categories">
+                    <div class="cat-choice-category" id="phone_pg">
+                        <h1>PHONES</h1>
+                    </div>
             </div>
 
-            <script>
-                var bannerStatus = 1;
-                 var bannerTimer = 4000;
-
-                 window.onload = function() {
-                     bannerLoop();
-                 }
-
-                 var startBannerLoop = setInterval(function() {
-                     bannerLoop();
-                 }, bannerTimer)
-
-                 function bannerLoop() {
-                     console.log("OwO");
-                     if(bannerStatus === 1) {
-                        document.getElementById("imgban-2").style.opacity = "0";
-                        setTimeout(function() {
-
-                            document.getElementById("imgban-1").style.right = "0px";
-                            document.getElementById("imgban-1").style.zIndex = "5";
-                            document.getElementById("imgban-2").style.right = "-1200px";
-                            document.getElementById("imgban-2").style.zIndex = "7";
-                            document.getElementById("imgban-3").style.right = "1200px";
-                            document.getElementById("imgban-3").style.zIndex = "3";
-                        }, 500);
-                         
-                        setTimeout(function() {
-                            document.getElementById("imgban-2").style.opacity = "1";
-                        }, 1000);
-                         
-                         bannerStatus = 2;
-                     }
-
-
-                     else if(bannerStatus === 2) {
-                        document.getElementById("imgban-3").style.opacity = "0";
-                        setTimeout(function() {
-
-                            document.getElementById("imgban-2").style.right = "0px";
-                            document.getElementById("imgban-2").style.zIndex = "5";
-                            document.getElementById("imgban-3").style.right = "-1200px";
-                            document.getElementById("imgban-3").style.zIndex = "7";
-                            document.getElementById("imgban-1").style.right = "1200px";
-                            document.getElementById("imgban-1").style.zIndex = "3";
-                        },500);
-                         
-                        setTimeout(function() {
-                            document.getElementById("imgban-3").style.opacity = "1";
-                        },1000);
-                         
-                         bannerStatus = 3;
-                     }
-
-
-                     else if(bannerStatus === 3) {
-                        document.getElementById("imgban-1").style.opacity = "0";
-                        setTimeout(function() {
-
-                            document.getElementById("imgban-3").style.right = "0px";
-                            document.getElementById("imgban-3").style.zIndex = "5";
-                            document.getElementById("imgban-1").style.right = "-1200px";
-                            document.getElementById("imgban-1").style.zIndex = "7";
-                            document.getElementById("imgban-2").style.right = "1200px";
-                            document.getElementById("imgban-2").style.zIndex = "3";
-                        },500);
-                         
-                        setTimeout(function() {
-                            document.getElementById("imgban-1").style.opacity = "1";
-                        },1000);
-                         
-                         bannerStatus = 1;
-                     }
-
-                     
-                 }
-            </script>
-
-
-            <!--PRODUCTS-->
             <div class="product-grid">
                 <div class="row">
                     <div class="product col-xl-3 col-lg-3 col-md-4 col-sm-6">

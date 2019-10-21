@@ -7,6 +7,7 @@
     <title>Charm</title>
 
     <!--<link rel="stylesheet" href="css/bootstap.min.css">-->
+    <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
@@ -20,21 +21,30 @@
                     <ul>
                         <li><a href="index2.html">Home</a>
                             <ul>
-                                <li><a href="#">Products</a></li>
+                                <li><a href="products.html">Products</a></li>
                                 <li><a href="cart.html">Cart</a></li>
-                                <li><a href="#">Contacts</a></li>
+                                <li><a href="contact.html">Contacts</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="#">Categories</a>
+                        <li><a href="categories.html">Categories</a>
                             <ul>
-                                <li><a href="#">Phones</a></li>
-                                <li><a href="#">Laptops</a></li>
-                                <li><a href="#">Groceries</a></li>
+                                <li><a href="phones.html">Phones</a></li>
+                                <li><a href="laptops.html">Laptops</a></li>
+                                <li><a href="groceries.html">Groceries</a></li>
                             </ul>
                         </li>
 
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+
+                        <!--Login/Signup ka html should show up when he is not logged in, if he is logged in then the current non commented html should show up-->
+                        <!--<li id="login"><a href="#">Login/Signup</a>-->
+                            <li id="login"><a href="#">Hello, Shivam</a>
+                                <ul>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </li>
 
                     </ul>
 
@@ -58,16 +68,19 @@
                         <li class="item-row">
                             <div class="item-name">Product</div>
                             <div class="item-cost">Cost</div>
+                            
                         </li>
 
                         <li class="item-row">
                             <div class="item-name">Mi TV 43"</div>
                             <div class="item-cost">&#8377;29,999</div>
+                            <a href="#" class="buy"><i class="fa fa-trash"></i></a>
                         </li>
 
                         <li class="item-row">
                             <div class="item-name">iPhone 11 Pro 64GB</div>
                             <div class="item-cost">&#8377;TOO FUCKING MUCH</div>
+                            <a href="#" class="buy"><i class="fa fa-trash"></i></a>
                         </li>
                     </ul>
 

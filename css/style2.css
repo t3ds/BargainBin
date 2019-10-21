@@ -54,8 +54,11 @@ nav ul li{
    position: relative; 
 }
 
+nav ul li#login {
+  margin-left: 550px;
+}
 
-nav ul li a,nav ul li div{
+nav ul li a,nav ul li#login a{
     display: block;
     font-size: 14px;
     color: #767676;
@@ -153,11 +156,11 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
-  width: 30%;
+  width: 40%;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 55%;
+  transform: translate(-50%, -55%);
 }
 
 
@@ -314,12 +317,17 @@ nav ul li ul li a:hover, nav ul li ul li a:focus{
   width: 1200px;
   background-color: #edebeb;
   margin: 10px auto;
+  margin-bottom: 50px;
 }
 
 .items{
   width: 800px;
   margin-top: 100px;
   margin-left: 200px;
+}
+
+.items>h2{
+  padding-top: 10px;
 }
 
 .items ul{
@@ -466,7 +474,7 @@ label
   text-decoration: none;
 }
 
-#cat1{
+#cat1, #phone_pg{
   background-image: url(../images/phone_category.jpg);
   background-size: cover;
   background-position: center;
@@ -474,21 +482,21 @@ label
 
 }
 
-#cat2 {
+#cat2, #laptop_pg {
   background-image: url(../images/laptop_category.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#cat3 {
+#cat3, #grocery_pg {
   background-image: url(../images/groceries_category.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.cat-choice
+.cat-choice,.cat-choice-category
 {
   width: 100%;
   height: 400px;
@@ -506,7 +514,7 @@ label
   opacity: 0.7;
 }
 
-.cat-choice h1 {
+.cat-choice h1,.cat-choice-category h1 {
   position: relative;
   right: 0;
   top: 80%;
@@ -515,6 +523,19 @@ label
 
 }
 
+/*****ACTUAL CATEGORY PAGES*****/
+
+/*#phone_pg{
+  background-image: url(../images/phone_category.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}*/
+
+#phone_pg:hover,#laptop_pg:hover, #grocery_pg:hover {
+  opacity: 0.7;
+}
 
 /*****PROFILE*****/
 .card {
@@ -579,7 +600,7 @@ label
   width: 65%;
   position: relative;
   text-align: center;
-  /*margin-right: 15px;*/
+  margin-right: 10%;
 }
  
 .right-column {
@@ -594,7 +615,7 @@ label
   right: auto;
   display: block;*/
   /*size: inherit;*/
-  position: absolute;
+  /*position: absolute;*/
   left: 0;
   top: 0;
 }

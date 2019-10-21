@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Charm</title>
 
-    <link rel="stylesheet" href="css/bootstap.min.css">
+    <!--<link rel="stylesheet" href="css/bootstap.min.css">-->
+    <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
@@ -36,6 +37,15 @@
 
                         <li><a href="#">Contact</a></li>
 
+                        <!--Login/Signup ka html should show up when he is not logged in, if he is logged in then the current non commented html should show up-->
+                        <!--<li id="login"><a href="#">Login/Signup</a>-->
+                            <li id="login"><a href="#">Hello, Shivam</a>
+                                <ul>
+                                    <li><a href="profile.html">Profile</a></li>
+                                    <li><a href="#">Sign Out</a></li>
+                                </ul>
+                            </li>
+                    </ul>
                         <div class="wrap">
                                 <div class="search">
                                    <input type="text" class="searchTerm" placeholder="What are you looking for?">
@@ -45,13 +55,13 @@
                                 </div>
                              </div>
 
-                    </ul>
+                    
                     
                 </nav>
             </header> <!--HEADER END-->
 
             <div id="results" class="product-grid">
-                <!--HTML WILL BE SAME AS PRODUCT HTML IN INDEX2; ADD USING JS AFTER FIGURING DATABASE SHIT-->
+                <!--HTML WILL BE SAME AS PRODUCT HTML IN INDEX2-->
             </div>
 
             <footer id="footer">
