@@ -7,6 +7,8 @@
     <title>Charm</title>
 
     <!--<link rel="stylesheet" href="css/bootstap.min.css">-->
+    <link rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
 </head>
 <body>
@@ -16,7 +18,7 @@
         <div id="main">
             <header>
                 <nav>
-                    <p id="title"><a href="home.html">Charm.</a></p>
+                    <p id="title"><a href="index2.html">Charm.</a></p>
                     <ul>
                         <li><a href="index2.html">Home</a>
                             <ul>
@@ -35,7 +37,6 @@
                         </li>
 
                         <li><a href="#">Contact</a></li>
-
                     </ul>
 
                     <div class="wrap">
@@ -47,45 +48,44 @@
                             </button>
                         </div>
                     </div>
+
+                            <!--<div class="search">
+                                <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                <button type="submit" class="searchButton">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </div>-->
+
+                    
                     
                 </nav>
             </header> <!--HEADER END-->
 
-            <div class="checkout">
-                <div class="items">
-                    <h2>Your Order.</h2>
-                    <ul>
-                        <li class="item-row">
-                            <div class="item-name">Product</div>
-                            <div class="item-cost">Cost</div>
-                        </li>
-
-                        <li class="item-row">
-                            <div class="item-name">Mi TV 43"</div>
-                            <div class="item-cost">&#8377;29,999</div>
-                        </li>
-
-                        <li class="item-row">
-                            <div class="item-name">iPhone 11 Pro 64GB</div>
-                            <div class="item-cost">&#8377;TOO FUCKING MUCH</div>
-                        </li>
-                    </ul>
-
-                    
-                    <div id="total" class="item-name">Total:</div>
-                        
-                    
+            <div class="item-container">
+ 
+                <!-- Left Column / Headphones Image -->
+                <div class="left-column">
+                  <img src="images/product_1.jpg" alt="">
                 </div>
-
-                <div class="options">
-
-                    <div>
-                            <input type="radio" name="payment" value="one" id="cash" class="form-radio" checked><label for="cash">Cash</label>
-                            <input type="radio" name="payment" value="two" id="card" class="form-radio" checked><label for="card">Credit</label>    
-                    </div>
-                    <a href="#" class="buy">BUY</a>
+               
+               
+                <!-- Right Column -->
+                <div class="right-column">
+               
+                  <!-- Product Description -->
+                  <div class="product-description">
+                    <span>Its a phone Motha-fucka</span>
+                    <h1>Totally Beautiful Phone</h1>
+                    <p>Like Literally amazing. So beautiful. Like hot damn Please call me on my cellphne. Now I usually dont swing that way but id fap to this i mean..look at those 2 hot, sexy camera bumps.</p>
+                  </div>
+               
+               
+                  <!-- Product Pricing -->
+                  <div class="product-price">
+                    <span>&#8377;affordable af bitch</span>
+                    <a href="#" class="cart-btn">Add to cart</a>
+                  </div>
                 </div>
-
             </div>
 
             <footer id="footer">
@@ -97,14 +97,5 @@
     <!--<script src="js/bootstrap.min.js"></script>-->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script2.js"></script>
-
-    <!--<script>
-        var radios = document.getElementsByClassName('form-radio');
-        for(i=0; i<radios.length; i++ ) {
-            radios[i].onclick = function(e) {
-                this.checked = false;
-            }
-        }
-    </script>-->
 </body>
 </html>
